@@ -19,5 +19,5 @@ formatação de titulos
 
 - para formatar um number, é possivel fazer isso na sua entrada com Number(comando de entrada(variavel)) ou com Number(variavel) no momento da operação
 - para formatar Strings, podesse modifica-las com o comando String(variavel) na hora do uso
-- Para formatar Strings, fica a cargo da concatenação 'texto padrão'+variavel ou do uso de templates strings 'texto padrão ${variavel}', testes aconselhados de serem feitos no node
-
+- Para formatar Strings, fica a cargo da concatenação 'texto padrão'+variavel ou do uso de templates strings `texto padrão ${variavel}``, sendo obrigatório o uso de crases ao inves de aspas, testes aconselhados de serem feitos no node
+- para modificar a String em si, podemos utilizar variavel.length para contar o número de caracteres, variavel.toUpperCase() para tornar todas as letras maiúsculas e variavel.toLowerCase() para tornar todas as letras minúsculas
