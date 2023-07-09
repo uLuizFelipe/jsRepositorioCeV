@@ -21,3 +21,12 @@ formatação de titulos
 - para formatar Strings, podesse modifica-las com o comando String(variavel) na hora do uso
 - Para formatar Strings, fica a cargo da concatenação 'texto padrão'+variavel ou do uso de templates strings `texto padrão ${variavel}``, sendo obrigatório o uso de crases ao inves de aspas, testes aconselhados de serem feitos no node
 - para modificar a String em si, podemos utilizar variavel.length para contar o número de caracteres, variavel.toUpperCase() para tornar todas as letras maiúsculas e variavel.toLowerCase() para tornar todas as letras minúsculas
+
+!---Operadores no arquivo referente---!
+Prioridade de operadores, decrescente!
+- parenteses ();
+- aritmeticos **, %, *, /, +, -;
+- relacionais >, <, >=, <=, ==, !=, ===, !==;
+- lógicos !, &&, ||;
+
+salário > 1500 && sexo != 'M' && idade <= 42 - 'essa pessoa ganha mais que 1500, não é um homem e tem menos de 42 anos?'
