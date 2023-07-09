@@ -5,7 +5,6 @@ para inicio rapido no vscode, criar um arquivo .html, inserir uma exclamação e
 comentários em javascript // para a linha e /* */ para uma área dentro dos sinais
 
 variaveis são espaços vagos que podem alocar dados, valores e informações. uma variavel pode alocar apenas um valor por vez e, caso esse valor n seja mantido por outra variavel, ele é perdido quando a variavel recebe um valor novo
-
 - podem começar com letras, $ ou _
 - não podem começar com números
 - podem conter números, letras, acentos e simbolos
@@ -14,5 +13,11 @@ variaveis são espaços vagos que podem alocar dados, valores e informações. u
 - não podem ser nomes reservados
 
 tipos primitivos iniciais: numbers, strings e boolean, null, undefined, object, function;
+- para identificar o tipo da variavel, utilize a funcão typeof para
 
-- para identificar o tipo da variavel, utilize a funcão typeof
+formatação de titulos
+
+- para formatar um number, é possivel fazer isso na sua entrada com Number(comando de entrada(variavel)) ou com Number(variavel) no momento da operação
+- para formatar Strings, podesse modifica-las com o comando String(variavel) na hora do uso
+- Para formatar Strings, fica a cargo da concatenação 'texto padrão'+variavel ou do uso de templates strings 'texto padrão ${variavel}', testes aconselhados de serem feitos no node
+

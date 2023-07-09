@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome preterido</title>
+    <style>
+    /*comentário em CSS
+    
+        body {
+            background-color: black;
+        }
+    */
+    </style>
+</head>
+<body>
+    <!--comentário em html
+    <h1>Olá, mundo!</h1>
+    <p>Meu paragrafo em html</p>
+-->
+    <script>
+        //para criar um texto em javascript é necessário concatenar as frases com a variavel
+        //código para receber e saudar um nome;
+        /*var nome = window.prompt('Digite in nome a ser saudado: ')
+        window.alert('Olá, '+nome+' Saudamos sua vinda')
+        */
+        var n1 = window.prompt('Digite o primeiro número da soma: ')
+        var n2 = window.prompt('Digite o segundo número da soma: ')
+        var soma = Number.parseInt(n1) + Number.parseInt(n2)//função que converte strings em numbers inteiros
+        window.alert('A soma gera: '+soma)
+        //tambem é possivel transformar a variavel já na sua entrada com um modo estenso e outro resumido
+        var n3 = Number.parseFloat(window.prompt('Digite o terceiro número da soma: '))
+        var n4 = Number(window.prompt('Digite o quarto número da soma: '))//modo resumido que deixa nas mãos do compilador a decisão de escolher o tamanho da variavel number
+        var sum = n3 + n4
+        window.alert('A soma gerada é: '+sum)
+        
+        //Para transformar Numbers em strings podemos utilizar dois comandos
+        var s = Number(n1) + n4
+        window.alert('A soma final é: '+s)
+        window.alert(n1.toString())
+        window,alert(String(n4))
+        s = n1 + n4
+        //serão demonstrados seus "valores" no alert, porem, não são mais variaveis do tipo number
+        window.alert('Já não é possivel somar esses valores, apenas concatenar-mos: '+s)
+
+        // Para formatar Strings, fica a cargo da concatenação 'texto padrão'+variavel ou do uso de templates strings 'texto padrão ${variavel}', testes aconselhados de serem feitos no node
+    </script>
+</body>
+</html>
