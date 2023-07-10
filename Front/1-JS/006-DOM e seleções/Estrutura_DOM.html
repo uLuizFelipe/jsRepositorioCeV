@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(161, 43, 43);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Demonstração do resultado</p>
+    <p>Aqui ficará demonstrado o que ocorreu no <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique</div>
+    <script>
+        window.document.write('Olá, mundo!<br>')
+        var p1 = window.document.getElementsByTagName(`p`)[0]
+        window.document.write(p1.innerText)
+        //p1.style.color = `blue` torna a com do paragrafo
+        var bo = window.document.body
+        //bo.style.background = `black` torna o corpo preto
+        /*
+        Tipos de seletores de elementos:
+         - por Marca
+            getElementByTagName
+         - por ID
+            getElementById
+         - por Nome
+            getElementByName
+         -por Classe
+            getElementByClassName
+         -por Seletor
+            querySelector
+        */
+    </script>
+</body>
+</html>
