@@ -12,21 +12,64 @@ variaveis são espaços vagos que podem alocar dados, valores e informações. u
 - Lowercases e Uppercases são diferentes, Nome != nome
 - não podem ser nomes reservados
 
-tipos primitivos iniciais: numbers, strings e boolean, null, undefined, object, function;
-- para identificar o tipo da variavel, utilize a funcão typeof para
+# tipos primitivos iniciais:
+- Numbers.
+- Strings.
+- Boolean.
+- Null.
+- Undefined.
+- Object. 
+- Function;
 
-formatação de titulos
+ Para identificar o tipo da variavel, utilize a funcão typeof para
+
+# formatação de titulos
 
 - para formatar um number, é possivel fazer isso na sua entrada com Number(comando de entrada(variavel)) ou com Number(variavel) no momento da operação
 - para formatar Strings, podesse modifica-las com o comando String(variavel) na hora do uso
 - Para formatar Strings, fica a cargo da concatenação 'texto padrão'+variavel ou do uso de templates strings `texto padrão ${variavel}``, sendo obrigatório o uso de crases ao inves de aspas, testes aconselhados de serem feitos no node
 - para modificar a String em si, podemos utilizar variavel.length para contar o número de caracteres, variavel.toUpperCase() para tornar todas as letras maiúsculas e variavel.toLowerCase() para tornar todas as letras minúsculas
 
+# Prioridade de operadores, decrescente!
 !---Operadores no arquivo referente---!
-Prioridade de operadores, decrescente!
+
 - parenteses ();
 - aritmeticos **, %, *, /, +, -;
 - relacionais >, <, >=, <=, ==, !=, ===, !==;
 - lógicos !, &&, ||;
 
 salário > 1500 && sexo != 'M' && idade <= 42 - 'essa pessoa ganha mais que 1500, não é um homem e tem menos de 42 anos?'
+
+# Tipos de seletores de elementos na estrutura DOM
+Levando em conta que os elementos são derivados da estrutura document, a escrita básica segue o padrão: 
+    document.metodoSeletor()
+
+- getElementById(); Retorna um elemento correspondente ao id passado como parâmetro (em formato string). No entanto, caso mais de um elemento possua o id passado como parâmetro, a função retorna o primeiro elemento encontrado. EX:
+        <div id = "frase-motivacional" class = "conteudo">
+        let frase = document.getElementById("frase-do-dia");
+
+- getElementsByClassName(); Retorna os elementos que possuem uma mesma classe. Esta função retorna uma HTMLCollection (uma coleção) de elementos, estando vazia ou não.
+        const amigos = document.getElementsByClassName("amigo");
+        HTMLCollection { lista de nomes iniciada no indice 0}
+
+- getElementsByTagName(); Cria uma coleção com todas as tags com o mesmo nome. Caso não exista nenhuma tag com o nome especificado, o retorno é uma HTML Collection vazia.
+        let nomeUsuario = document.getElementsByTagName("nome");
+        HTMLCollection { lista de nomes iniciada no indice 0}
+
+- getElementsByName(); Cria uma NodeList com todos os elementos de código selecionados pelo atributo {name} dsa tags HTML
+        let opiniaoUsuario = document.getElementsByName(`name`);
+
+- querySelector(); Recebe como parametro a mesma roupagem do CSS, com o uso de derivação para encontrar o elemento, {.} para indicar classes e {#} para indicar IDs. Devolve o primeiro elemento
+
+- querySelectorAll(); Mesmo modo de busca que seu antecessor, retorna uma NodeList
+        let paragrafo = document.querySelectorAll("p#paragrafo_noticias");
+
+# Eventos DOM
+!---pesquisar lista completa na indicação de leitura: https://developer.mozilla.org/en-US/docs/Web/Events ---!
+        Tipos populares de eventos:
+- mouseenter - mouse entra na área
+- mouseout - mouse sai da área
+- mousedowm - apertar e segurar
+- mouseup - soltar
+- mousemove - movimentoar o mouse na área
+- click - click rápido
