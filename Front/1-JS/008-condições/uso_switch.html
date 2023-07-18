@@ -15,11 +15,11 @@
     <p id="resposta">Aqui aparecerá sua sorte</p>
     <script>
         function mostrar() {
-            var a = window.document.querySelector(`input#num1`)
+            var a = Number(window.document.querySelector(`input#num1`).value)
             var b = window.document.querySelector(`p#resposta`)
             switch (a) {
                 case 1:
-                    window.document.write(b.innerHTML)
+                    b.innerHTML = `sua sorte não está no amor!`
                 break;
                 case 2:
 
