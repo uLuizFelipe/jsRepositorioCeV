@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes de switchCase</title>
+    <style>
+    /*comentário em CSS*/
+    </style>
+</head>
+<body>
+    <h1>Escolha um número, de 1 a 6</h1>
+    <input type="number" name="num1" id="num1">
+    <input type="button" value="mostrar" onclick="mostrar()">
+    <p id="resposta">Aqui aparecerá sua sorte</p>
+    <script>
+        function mostrar() {
+            var a = window.document.querySelector(`input#num1`)
+            var b = window.document.querySelector(`p#resposta`)
+            switch (a) {
+                case 1:
+                    window.document.write(b.innerHTML)
+                break;
+                case 2:
+
+                break;
+                case 3:
+
+                break
+                case 4:
+                
+                break;
+                case 5:
+                
+                break;
+                case 6:
+                
+                break;
+                default:
+                window.document.alert(`Esse valor está fora das possibilidades, escolha outro!`)
+                window.document.write(b.innerHTML)
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
