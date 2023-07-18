@@ -73,3 +73,61 @@ Levando em conta que os elementos são derivados da estrutura document, a escrit
 - mouseup - soltar
 - mousemove - movimentoar o mouse na área
 - click - click rápido
+
+# Condições
+Estruturas que garantem funcionamento lógico para o código de modo a rodar partes especificas cumprindo funções especificas
+
+        Tipos de estruturas:
+- condição simples
+        if (condição) {
+                comando
+}
+
+- condição completa
+        if (condição) {
+                comando 1
+}       else {
+                comando 2
+}
+
+- condição aninhada
+        if (condição 1) {
+                if (condição 2) {
+                        comando 1
+                }
+                else {
+                        comando 2 
+                }
+                comando 3
+}       else {
+                comando 4
+}
+
+- condição composta
+        if (condição 1) {
+                comando 1
+        }
+
+        else if (condição 2) {
+                comando 2
+        }
+
+        else {
+                comando 3
+        }
+
+- condição multipla
+        switch (expressão) {
+                case valor1:
+
+                break;
+                case valor2:
+
+                break;
+                case valor3:
+        
+                break;
+                default:
+
+                break;        
+        }

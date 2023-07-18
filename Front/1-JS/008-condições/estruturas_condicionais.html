@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome preterido</title>
+    <style>
+    /*comentário em CSS*/
+    </style>
+</head>
+<body>
+    <input type="number" name="num1" id="num1">
+    <h1>Resultado</h1>
+    <script>
+        var a = Number(window.document.querySelector(`input#num1`).value)
+        if (a > 18) {
+            window.alert(`Pela idade entregada, o usuário é de menor`)
+        }
+
+        else {
+            window.alert(`A idade do usuário é avançada demais, ele está desclassificado`)
+        }
+        
+    </script>
+</body>
+</html>
