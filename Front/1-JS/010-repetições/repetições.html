@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome preterido</title>
+    <style>
+    /*comentário em CSS*/
+    </style>
+</head>
+<body onload="repetição()">
+    <p id="resposta">Aqui vai sair o resultado: <br></p>
+    <script>
+        var linha = window.document.querySelector(`p#resposta`)
+        function repetição() {
+            for(var loop=1;loop<=10;loop++ ) {
+            //for(var loop=10;loop>=1;loop--) {
+                linha.innerHTML += `contagem ${loop}<br>`
+            }
+        }
+    </script>
+</body>
+</html>

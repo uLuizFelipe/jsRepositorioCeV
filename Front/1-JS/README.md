@@ -71,7 +71,7 @@ Levando em conta que os elementos são derivados da estrutura document, a escrit
 - mouseout - mouse sai da área
 - mousedowm - apertar e segurar
 - mouseup - soltar
-- mousemove - movimentoar o mouse na área
+- mousemove - movimentar o mouse na área
 - click - click rápido
 
 # Condições
@@ -131,3 +131,15 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
 
                 break;        
         }
+
+# Dicas iniciais
+- linha.innerHtml += `` dá certo
+- inputs uteis:
+input:number
+input:botton
+input:radio - usar getElementsByName nesse, com if(var[posição].checked) para verificar qual foi escolhido
+
+# estruturas de repetição
+principais tipos
+- while, enquanto a condição for respeitada, o fluxo será repetido
+- do while, completa a ação pelo menos uma vez, para logo em seguida testar a condição de existência

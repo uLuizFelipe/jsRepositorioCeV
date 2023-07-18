@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de repetições</title>
+    <style>
+    /*comentário em CSS*/
+    </style>
+</head>
+<body onload="">
+    <p id="resposta">Contador regressivo: </p>
+    <script>
+        var loop = 10
+        var linha = window.document.querySelector(`p#resposta`)
+        while (loop > 0) {
+            linha.innerHTML += `${loop} `
+            loop--
+        }
+    </script>
+</body>
+</html>
