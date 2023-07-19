@@ -14,9 +14,10 @@
         var linha = window.document.querySelector(`p#resposta`)
         function repetição() {
             for(var loop=1;loop<=10;loop++ ) {
-            //for(var loop=10;loop>=1;loop--) {
-                linha.innerHTML += `contagem ${loop}<br>`
+            for(var loop1=10;loop1>=1;loop1--) {
+                linha.innerHTML += `contagem ${loop1*loop}<br>`
             }
+         }
         }
     </script>
 </body>

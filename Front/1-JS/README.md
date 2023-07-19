@@ -141,5 +141,6 @@ input:radio - usar getElementsByName nesse, com if(var[posição].checked) para 
 
 # estruturas de repetição
 principais tipos
-- while, enquanto a condição for respeitada, o fluxo será repetido
-- do while, completa a ação pelo menos uma vez, para logo em seguida testar a condição de existência
+- while(){}, enquanto a condição for respeitada, o fluxo será repetido
+- do{} while(), completa a ação pelo menos uma vez, para logo em seguida testar a condição de existência
+- for(var inicio = valor; condição numérica de existência;incremento no contador){} mais utilizado quando a condição é numérica, pode ser maleavel, parada somente pela criatividade

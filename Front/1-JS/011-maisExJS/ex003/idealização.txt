@@ -1,0 +1,4 @@
+recolher variaveis ligadas as linahs editáveis
+recolher variavel para o inicio e aplicar regra de existência(inicio != null)
+caso satisfação a regra de existência, recolher a variavel de final e aplicar regras de existência(final != null), if (final == inicio), if (final > inicio) else
+recolher a variavel passos e definir qual será sua interação com o inicio e o final if(inicio > final) passada = -passada else, if (passo+inicio > final)
