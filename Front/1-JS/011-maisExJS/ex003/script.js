@@ -48,31 +48,37 @@ function calcular () {
                                             linha.innerHTML += ``
                                         }
                                             else {
-                                                if (invert == 1) {  
-                                                    var passos = final/passada
-                                                        descrição.innerHTML += ` e terminará em ${passos} passos`
-                                                            for (var loop = passos; loop > 0;loop--){
-                                                                linha.innerHTML += `${passada*loop} `
-                                                                if (passada*loop >= inicio) {
-                                                                    linha.innerHTML += String.fromCodePoint(0x1F449);
-                                                                }
+                                                var passos = (final-inicio)/passada
+                                                    descrição.innerHTML += ` e terminará em ${passos} passos`
+
+                                                if (invert == 1) {
+                                                    for (var loop = passos; loop > 0;loop--){
+                                                        linha.innerHTML += `${passada*loop+inicio} `
+                                                            if (passada*loop <= final) {
+                                                                linha.innerHTML += String.fromCodePoint(0x1F449);
                                                             }
-                                                            if (passada*loop > inicio) {
-                                                                linha.innerHTML += `${passada*loop}`+String.fromCodePoint(0x1F64C);
-                                                            }
+                                                    }
+                                                        if (passada*loop <= final) {
+                                                            linha.innerHTML += `${inicio+passada*loop}`+String.fromCodePoint(0x1F64C);
+                                                        }
                                                             else {
                                                                 linha.innerHTML += String.fromCodePoint(0x1F64C);
                                                             }
                                                 }
                                                     else {
-                                                        var passos = final/passada
-                                                        descrição.innerHTML += ` e terminará em ${passos} passos`
-                                                            for (var loop = 0; loop < passos;loop++){
-                                                                linha.innerHTML += `${inicio+passada*loop} `+String.fromCodePoint(0x1F449);
+                                                        for (var loop = 0; loop < passos;loop++){
+                                                            linha.innerHTML += `${inicio+passada*loop} `
+                                                                if (inicio+passada*(loop+1) <= final) {
+                                                                    linha.innerHTML += String.fromCodePoint(0x1F449);
+                                                               }
+                                                        } 
+                                                            if (inicio+passada*loop <= final) {
+                                                                linha.innerHTML += `${inicio+passada*loop}`+String.fromCodePoint(0x1F64C);
                                                             }
-                                                            linha.innerHTML += `${passos*passada}`+String.fromCodePoint(0x1F64C);
+                                                                else {
+                                                                    linha.innerHTML += String.fromCodePoint(0x1F64C);
+                                                                }
                                                     }
-                                                invert = 0
                                             }
                                     }
                         }
