@@ -3,13 +3,13 @@ function calcular () {
     var linha = window.document.querySelector(`p#resultado`)
 
     var inicio = Number(window.document.querySelector(`input#inicio`).value)
-        if (inicio == null) {
+        if (inicio.length == 0) {
             window.alert(`Insira um valor valido para inicio!`)
             linha.innerHTML += ``
         }
         else {
             var final = Number(window.document.querySelector(`input#final`).value)
-            if (final == null) {
+            if (final.length == 0) {
                 window.alert(`Insira um valor valido para final!`)
                 linha.innerHTML += ``
             }
@@ -36,14 +36,14 @@ function calcular () {
                                             descrição.innerHTML = `O passeio será longinguo`
                                         }
                             var passada = Number(window.document.querySelector(`input#passos`).value)
-                                if (passada == 0 || passada == null) {
+                                if (passada == 0 || passada.length == 0) {
                                     window.alert(`Insira um valor valido para passada!`)
                                     descrição.innerHTML += ` e nunca terá fim com essa passada`
                                     linha.innerHTML += ``
                                 }
                                     else {
                                         linha.innerHTML =``
-                                        if (inicio+passada > final-passada) {
+                                        if (inicio+passada >= final) {
                                             descrição.innerHTML += ` e terminará extremamente rápido`
                                             linha.innerHTML += ``
                                         }
