@@ -144,3 +144,16 @@ principais tipos
 - while(){}, enquanto a condição for respeitada, o fluxo será repetido
 - do{} while(), completa a ação pelo menos uma vez, para logo em seguida testar a condição de existência
 - for(var inicio = valor; condição numérica de existência;incremento no contador){} mais utilizado quando a condição é numérica, pode ser maleavel, parada somente pela criatividade
+
+# variaveis compostas/vetores
+- variavel que aloca n valores fixos sendo diferenciados pela posição
+- é possivel adicionar/substituir um valor ao array dando a localização ou usando a função vetor.push()
+- vetor.length indica a quantidade de elementos no vetor
+- vetor.indexOf(valor), busca o valor dentro do vetor e retorna a posição, caso não exista esse valor noi velor, o valor -1 é retornado
+
+# function
+ function ação(parametro) {
+        return resultado
+ }
+
+ let variavel = ação(valor)
