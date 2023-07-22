@@ -1,4 +1,4 @@
-# Front-1-JS
+# Front-JS
 
 para inicio rapido no vscode, criar um arquivo .html, inserir uma exclamação e dar enter, isso ja gerará um arquivo html5
 
@@ -157,3 +157,10 @@ principais tipos
  }
 
  let variavel = ação(valor)
+
+ - recursividade: estado onde uma fuynção se resove se chamando ate alcançar um parametro esperado
+exemp:
+function fator(n) {
+        if (n == 1) {return 1}
+        else {return n*fator(n-1)}
+}

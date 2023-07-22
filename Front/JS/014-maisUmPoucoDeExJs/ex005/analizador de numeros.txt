@@ -1,0 +1,5 @@
+criar um vetor que recebe valores não repetidos entre 1 e 100,
+ adicionando as entradas até a tecla finalizar ser apertada.
+- cada adição deve ser mostrada em um elemento select com a frase `valor ${}  adicionado`
+- Apresentar erros caso o valor for repetido, fora do limite ou nulo. finalizar não pode ser feito caso o vetor seja vazio
+- finalizar apresenta o tamanho do vetor, o maior valor, o menor valor, a soma dos valores e a media entre os valores
