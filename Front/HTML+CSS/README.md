@@ -14,5 +14,14 @@ comentários em HTML entre <!----> e em CSS entre/**/
     header;
     footer;
     br; quebra de linha
+    hr; linha horizontal
     &lt; menor que
     &gt; maior que
+
+# Emojis e simbolos
+- para uso de emojis e simbolos, pesquisar seus códigos na web
+- Emojis são uma combunação do prefixo &#x + seu código hexadecimal + ;
+
+# Imagens
+- png, imagens com transparéncia e qualidade normalmente melhor
+- jpg, compactação é maior importância no arquivo
