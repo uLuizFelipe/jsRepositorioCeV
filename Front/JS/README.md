@@ -79,11 +79,13 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
 
         Tipos de estruturas:
 - condição simples
+
         if (condição) {
                 comando
 }
 
 - condição completa
+
         if (condição) {
                 comando 1
 }       else {
@@ -91,6 +93,7 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
 }
 
 - condição aninhada
+
         if (condição 1) {
                 if (condição 2) {
                         comando 1
@@ -104,6 +107,7 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
 }
 
 - condição composta
+
         if (condição 1) {
                 comando 1
         }
@@ -117,6 +121,7 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
         }
 
 - condição multipla
+
         switch (expressão) {
                 case valor1:
 
