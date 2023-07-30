@@ -32,9 +32,10 @@ function mostraMenor() {
     let elemento = vetor[0]
     let pos = 0
         for (let loop in vetor) {
-            if (elemento > vetor[loop])
+            if (elemento > vetor[loop]) {
                 elemento = vetor[loop]
-                    pos = loop
+                pos = loop
+            }
         }
     return `O menor valor é ${elemento} e está na posição ${Number(pos)+1}`
 }
@@ -43,12 +44,12 @@ function mostraMaior() {
     let elemento = vetor[0]
     let pos = 0
         for (let loop in vetor) {
-            if (elemento < vetor[loop])
+            if (elemento < vetor[loop]) {
                 elemento = vetor[loop]
-                    pos = loop
+                pos = loop
+            }
         }
     return `O maior valor é ${elemento} e está na posição ${Number(pos)+1}`
-
 }
 
 function mostrarSomaEMedia() {
@@ -68,7 +69,6 @@ function finalizar() {
                 linhaResultado.innerHTML += `O vetor possui tamanho ${vetor.length} `
                     linhaResultado.innerHTML +=`<br>`+mostraMenor()+`<br>`
                         linhaResultado.innerHTML += mostraMaior()+`<br>`
-                            linhaResultado.innerHTML += mostrarSomaEMedia()+`<br>`
-                         
+                            linhaResultado.innerHTML += mostrarSomaEMedia()+`<br>`           
         }
 }

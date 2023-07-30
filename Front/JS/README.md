@@ -76,8 +76,8 @@ Levando em conta que os elementos são derivados da estrutura document, a escrit
 
 # Condições
 Estruturas que garantem funcionamento lógico para o código de modo a rodar partes especificas cumprindo funções especificas
+Tipos de estruturas:
 
-        Tipos de estruturas:
 - condição simples
 
         if (condição) {
@@ -88,9 +88,10 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
 
         if (condição) {
                 comando 1
-}       else {
+        }
+        else {
                 comando 2
-}
+        }
 
 - condição aninhada
 
@@ -102,20 +103,19 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
                         comando 2 
                 }
                 comando 3
-}       else {
+        }
+        else {
                 comando 4
-}
+        }
 
 - condição composta
 
         if (condição 1) {
                 comando 1
         }
-
         else if (condição 2) {
                 comando 2
         }
-
         else {
                 comando 3
         }
