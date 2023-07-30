@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mudanças semanticas e não-semanticas</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <div style="background-color: blueviolet; width: 500px;">    
+        <h2>
+            Negrito &lt;b&gt; / destaque &lt;strong&gt;
+        </h2>
+        <p>
+            nessa linha o <strong>Destaque</strong> é semântico<!--Da sentido de força ao termo-->
+        </p>
+        <p>
+            nessa linha o <b>Negrito</b> é não-semântico<!--apenas estético-->
+        </p>
+    </div>
+    <div style="background-color: aqua; width: 500px;" >
+        <h2>
+            Itálico &lt;i&gt; / Ênfase &lt;em&gt;
+        </h2>
+        <p>
+            Nessa linha o <em>Ênfase</em> é semántico
+        </p>
+        <p>
+            Nessa linha o <i>itálico</i> é não-semántico
+        </p>
+    </div>
+    <div>
+        <h2>Marcação no texto</h2>
+        <p>Podemos criar uma <mark style="background-color: aquamarine;">marcação de texto</mark> com a tag MARK</p>
+    </div>
+    <div>
+        <h2>Exclusão de texto</h2>
+        <p>Podemos gerar um texto que será <del>escrito mas não considerado</del> pelos pesquisadores</p>
+    </div>
+    <div>
+        <h2>texto inserido</h2>
+        <p>Podemos marcar um texto como <ins>inserido para dar ênfase</ins> e indicar que ele foi adicionado</p>
+        <p>Existe também a <u>tag U</u> não-semántica</p>
+    </div>
+    <div>
+        <h2>Sobrescritura &lt;sup&gt; / Subescritura &lt;sub&gt; </h2>
+        <p>Demonstração: x<sup>2</sup> + 3</p>
+        <p>Demonstração: H<sub>2</sub>O</p>
+    </div>
+    <div>
+        <h2>Pré-formatação &lt;pre&gt;</h2>
+        <pre><h3>   Código fictício para verificar se o número é par ou não</h3><p>
+                let num = document.querySelector(`input#id`)
+                let n = Number(num.value)
+                
+                function isEven(n) {
+                    if (n%2 == 0) {
+                        return `is even`
+                    }   else {
+                            return `is'n even`
+                    }
+                }
+            </p>
+        </pre>
+    </div>
+
+    <div>
+        <h2>Citações em bloco</h2>
+            <p>
+                <blockquote cite="lorenIpson"><!--serve para marcar para os buscadores encontrarem sua pagina pela citação e para dar créditos para os citados-->
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, architecto iure assumenda facilis nostrum deserunt voluptate! Necessitatibus illo facilis beatae voluptate, tenetur soluta id minus eius quos deserunt numquam eum.
+                </blockquote>
+            </p>
+    </div>
+    <div>
+        <h2>Abreviações</h2>
+            <p>
+                Estou estudando <abbr title="Hypertext markup language">HTML</abbr> e <abbr title="Cascadian Style Sheets">CSS</abbr>, já terminei o básico de <abbr title="Javascript">Js</abbr>
+            </p>
+    </div>
+    <div>
+        <h2>Inversão de texto</h2>
+            <p><bdo dir="ltr">Estou com raiva de HTML</bdo></p>
+            <p><bdo dir="rtl">Estou com raiva de HTML</bdo></p>
+    </div>
+</body>
+</html>
