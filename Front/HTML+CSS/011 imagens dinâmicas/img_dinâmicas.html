@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando imagens dinâmicas</title>
+</head>
+<body>
+    <h1>para surtir o efeito, modifique o tamanho da aba</h1>
+    <picture>
+        <source media="(max-width: 525px)" srcset="imgs/P.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imgs/M.png" type="image/png">
+        <img src="imgs/G.png" alt="foto maior">
+    </picture>
+</body>
+</html>

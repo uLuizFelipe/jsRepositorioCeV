@@ -71,5 +71,25 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - Para acessar links internos em pastas anteriores, utilize ../ para retornar uma pasta
 
 # Baixar links
-- usopara gerar o link de download, <a href="path" download="nome do arquivo" type="formato/tipo do arquivo"></a>
+- uso para gerar o link de download, <a href="path" download="nome do arquivo" type="formato/tipo do arquivo"></a>
 
+# imagens dinâmicas
+- iniciando com a TAG <picture>, criamos uma lista de elementos que serão sortidos para aparecer como source, a ordem deve ser seguida, sendo ela do menos pro maior ou do maior pro menor
+- a imagem aberta pelo <img> deve ser a ultima da lista
+- os outros elementos devem ser <source media="((max ou min)-width: npx)" srcset="imgs/nome.tipo" type="image/tipo">
+
+# audio
+- use a tag <audio src="audio.mp3"></audio>
+- o parametro <autoplay> faz o audio tocar no momento que a pagina se inicia
+- o parametro <controls> disponibiliza um controle para a midia
+- os tipos de audio disponiveis são mp3 type=mpeg, ogg type=ogg e wav type=wav
+- audio tb, pode rodar formatos diferentes com o uso da tag source
+- <preload="">, escolhe se carregará automaticamente ou só quando derem play
+- <loop>, recomeça quando o arquivo acaba de rodar
+
+<audio preload="auto" controls loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+tentando reproduzir na ordem
