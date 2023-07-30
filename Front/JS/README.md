@@ -82,7 +82,7 @@ Estruturas que garantem funcionamento lógico para o código de modo a rodar par
 
         if (condição) {
                 comando
-}
+        }
 
 - condição completa
 
