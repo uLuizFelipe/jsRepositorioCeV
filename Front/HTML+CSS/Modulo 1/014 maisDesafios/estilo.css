@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(42, 41, 41);
+}
+
+h1#titulo {
+    text-align: center;
+    color: white;
+}
+
+div#iframe {
+    align-items: center;
+}
+
+div#footer>p{
+    text-align: center;
+}
+
+div#footer>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+div#footer>p>a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}

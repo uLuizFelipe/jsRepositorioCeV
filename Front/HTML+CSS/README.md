@@ -1,5 +1,7 @@
 # Front-HTML/CSS
 
+# modulo 1
+
 - para inicio rapido no vscode, criar um arquivo .html, inserir uma exclamação e dar enter, isso ja gerará um arquivo html5
 
 comentários em HTML entre <!----> e em CSS entre/**/
@@ -19,14 +21,34 @@ comentários em HTML entre <!----> e em CSS entre/**/
     &gt; maior que
 
 # Emojis e simbolos
-- para uso de emojis e simbolos, pesquisar seus códigos na web
+- formatação: &#xNlNNN;
 - Emojis são uma combunação do prefixo &#x + seu código hexadecimal + ;
 
+- para uso de emojis e simbolos, pesquisar seus códigos na web
+
 # Imagens
+
+- <img src="path.tipo" alt="nome">
+
 - png, imagens com transparéncia e qualidade normalmente melhor
 - jpg, compactação é maior importância no arquivo
 - para colocar uma imagem, usar o marcador <img>
-- favicon são as imagens de shortcut da pagina, ficam no canto superior da pagina, são inseridas com o marcador <link rel="shortcut icon" href="path da imagem">
+# Favicon
+-  São as imagens de shortcut da pagina, ficam no canto superior da pagina, são inseridas com o marcador <link rel="shortcut icon" href="path da imagem">
+
+
+# imagens dinâmicas
+
+<picture>
+        <source media="(max-width: tamanho)" srcset="path.tipo" type="image/tipo">
+        <source media="(max-width: tamanho)" srcset="path.tipo" type="image/tipo">
+        <img src="path.tipo" alt="nome">
+    </picture>
+
+- iniciando com a TAG <picture>, criamos uma lista de elementos que serão sortidos para aparecer como source, a ordem deve ser seguida, sendo ela do menos pro maior ou do maior pro menor
+- a imagem aberta pelo <img> deve ser a ultima da lista
+- os outros elementos devem ser <source media="((max ou min)-width: npx)" srcset="imgs/nome.tipo" type="image/tipo">
+
 
 # semantica
     Para organizar o conteúdo em HTML, algumas tags podem sem utilizadas. A maioria delas não muda somente a forma do conteúdo, elas também marcam o conteúdo para buscas nos mecanismos de pesquisa
@@ -49,37 +71,68 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 # Listas 
 - ordenadas<ol>
-    para iniciar a lista ordenada, podendo receber atributos para modificar em qual elemento começar, ou qual o source, ex: type=`1`, `A`, `a`, `I`, `i`; start=`6`, elemento inicial da lista
 
-- Não ordenadas<ul> comumente usadas como menus
+    <ol type="I">
+       <li>Acordar</li>
+       <li>escovar os dentes</li>
+       <li>tomar café</li>
+       <li>tomar banho e escovar</li>
+       <li>sair de casa</li>
+    </ol>
+
+- para iniciar a lista ordenada, podendo receber atributos para modificar em qual elemento começar, ou qual o source, ex: type=`1`, `A`, `a`, `I`, `i`; start=`6`, elemento inicial da lista
+
+- Não ordenadas<ul>
+
+    <ul type="I">
+       <li>Acordar</li>
+       <li>escovar os dentes</li>
+       <li>tomar café</li>
+       <li>tomar banho e escovar</li>
+       <li>sair de casa</li>
+    </ul>
+
+- comumente usadas como menus
     para iniciar a lista não-ordenada, podendo receber atributos para modificar em qual elemento começar, ou qual o source, ex: type=`disc`, `circle`, `square`;
 
 - Cada elemento de qualquer lista deverá ser marcado por <li>, o </li> é opcional no html5
 - como todo marcador, é possivel fazer listas dentro de listas
 
-- listas de marcação<dl>
+- listas de definição
+
+    <dl>
+       <dt>HtML</dt>
+       <dd>Linguagem de conteúdo</dd>
+       <dt>CSS</dt>
+       <dd>Linguagem de forma</dd>
+       <dt>Js</dt>
+       <dd>Linguagem de programação para interatividade</dd>
+    </dl>
+
     <dt> - termo a ser definido
     <dd> - definição do termo
 
 # links e ancoras
+
+-    <a href="url">ancora</a>
+
 - links utilizam de ancoras e url's para entregar mobilidade dentro e entre sites
-- <a href="url">ancora</a>
 - caso o link envie o usuário para outra pagina no mesmo produto, recomendasse que use esse código.
--quando o destino é externo, recomendasse que adicione os atributos:
+- quando o destino é externo, recomendasse que adicione os atributos:
     <a href="path" target="_blank" rel="external">ancora</a>
 tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - Para acessar links internos em pastas anteriores, utilize ../ para retornar uma pasta
 
 # Baixar links
-- uso para gerar o link de download, <a href="path" download="nome do arquivo" type="formato/tipo do arquivo"></a>
 
-# imagens dinâmicas
-- iniciando com a TAG <picture>, criamos uma lista de elementos que serão sortidos para aparecer como source, a ordem deve ser seguida, sendo ela do menos pro maior ou do maior pro menor
-- a imagem aberta pelo <img> deve ser a ultima da lista
-- os outros elementos devem ser <source media="((max ou min)-width: npx)" srcset="imgs/nome.tipo" type="image/tipo">
+- <a href="path" download="nome do arquivo" type="formato/tipo do arquivo"></a>
+
+- uso para gerar o link de download
 
 # audio
-- use a tag <audio src="audio.mp3"></audio>
+
+- <audio src="path.tipo" atributos></audio>
+
 - o parametro <autoplay> faz o audio tocar no momento que a pagina se inicia
 - o parametro <controls> disponibiliza um controle para a midia
 - os tipos de audio disponiveis são mp3 type=mpeg, ogg type=ogg e wav type=wav
@@ -92,4 +145,50 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
     <source src="audio.mp3" type="audio/mpeg">
     <source src="audio.mp3" type="audio/mpeg">
 </audio>
-tentando reproduzir na ordem
+
+# videos
+- para uam fonte de audio
+
+   <video src="path.tipo" controls></video>
+
+- para disponibilizar diversas fontes de vide
+
+   <video controls width="500" poster="capa de video">
+    <source src="path" type="arquivo/tipo">
+    <source src="path" type="arquivo/tipo">
+    <source src="path" type="arquivo/tipo">
+    <source src="path" type="arquivo/tipo">
+    <p>não possui compatibilidade</p>
+   </video>
+
+- para links externos
+
+    <iframe width="560" height="315" src="url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# modulo 2
+
+# inicio CSS - inline
+
+    <h1 style="atributo válido">conteúdo</h1>
+
+- aplicar o estilo no atributo da marcação
+- pouco recomendado
+
+# CSS - interno
+
+    <head>
+        <style>
+            h1 {
+                atributo válido
+            }
+        </style>
+    </head>
+
+- recomendado para estilos pequenos e/ou exclusivos
+
+# CSS - linkado
+
+    <link rel="stylesheet" href="style.css">
+
+- solução para não poluir o arquivo principal
+- possivel puxar diversos links no arquivo

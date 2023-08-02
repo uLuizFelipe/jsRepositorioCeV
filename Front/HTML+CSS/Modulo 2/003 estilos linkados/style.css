@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+}
