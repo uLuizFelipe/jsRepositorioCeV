@@ -167,6 +167,15 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 
 # modulo 2
 
+# Propriedades em CSS
+- Área de conteúdo: Engloba o conteúdo, sua área até a margem(padding), a propria margem(border) e sua área pós-margem(margin)
+- width: largura horizontal
+- height: altura vertical
+- padding: distancia entre o conteúdo e a borda
+- border: a margem do conteúdo
+- margin: área externa à margem
+- shadow-box: sombra estilizada(quanto a sombra irá para o lado, quanto a sombra irá para baixo, quanto a sombra espalhará, opacidade da sombra)
+
 # inicio CSS - inline
 
     <h1 style="atributo válido">conteúdo</h1>
@@ -192,3 +201,16 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 
 - solução para não poluir o arquivo principal
 - possivel puxar diversos links no arquivo
+
+# para alterar configurações globais das CSS da pagina, utilizar * como nominador
+    
+    <style>
+        *{
+            estilos a serem implementados
+        }
+
+# Comandos de estilo
+- background-color:  implementa uma cor ao plano de fundo
+- background-image: linear ou radial-gradient(sentido, quais cores a serem implementadas)  implementa estilos de degrade ao fundo
+- color:  muda a cor do objeto dentro da divisão
+
