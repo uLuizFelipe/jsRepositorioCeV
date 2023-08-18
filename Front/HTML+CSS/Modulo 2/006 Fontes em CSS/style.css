@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    border-radius: 15px;
+}
+
+body {
+    background-image: linear-gradient(to right, yellow, green, blue);
+    /*
+        Medidas absolutas
+        cm, mm, in, px, pt, pc
+    
+        Medidas relativas
+        em, ex, rem, vw, vh, %
+
+        16px = 1em
+    */
+    font: italic bold 1.09em Arial;
+}
+main{
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+h1{
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.3), rgba(0, 0, 255, 0.3));
+    text-decoration: underline;
+}
+
+h2{
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.3), rgba(0, 0, 255, 0.3));
+    text-decoration: underline;
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.2);
+}

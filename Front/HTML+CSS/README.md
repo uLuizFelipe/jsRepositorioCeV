@@ -176,6 +176,49 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - margin: área externa à margem
 - shadow-box: sombra estilizada(quanto a sombra irá para o lado, quanto a sombra irá para baixo, quanto a sombra espalhará, opacidade da sombra)
 
+# Medidas e tamanhos em CSS
+- font-family:
+
+- ABSOLUTAS:
+    - cm: centimetro
+    - mm: milimetro
+    - in: inches, polegadas
+    - px: pixel (recomendado)
+    - pt: ponto
+    - pc: pyca
+
+- RELATIVAS:
+    - em: Relativo ao M da fonte (recomendado)
+    - ex: Relativo ao x da fonte
+    - rem: Relativo ao M do root do body
+    - vw: Relativo a largura porta de video utilizada
+    - vh: Relativo a altura porta de video utilizada
+
+    16px == 1em
+
+# Pesos em CSS
+- font-weigth: "peso" da letra, existem em algumas fontes, aumenta a evidência dela.
+
+# Estilo em CSS
+- font-style: Aplica certas características ao estilo da fonte
+
+# Estilos importados do Google
+- acesse o repositório do Google https://fonts.google.com/
+- use o @import url(infos da fonte), nas regras das CSS
+
+# Fontes baixadas
+- acesse o repositório, recomendado https://www.dafont.com/pt/
+- descompacte o .zip DENTRO DA PASTA DO SITE 
+- use o @font-face{
+            font-family;
+            src: url('nome') format(formato do arquivo);
+        }, nas regras das CSS
+
+# Shorthand font
+- Simplificação da construção de atributos em uma fonte
+- font-style, font-weigth, font-size, font-family
+- font: estilo peso tamanho familia;
+
 # inicio CSS - inline
 
     <h1 style="atributo válido">conteúdo</h1>
@@ -214,3 +257,5 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - background-image: linear ou radial-gradient(sentido, quais cores a serem implementadas)  implementa estilos de degrade ao fundo
 - color:  muda a cor do objeto dentro da divisão
 
+# alinhamentos em CSS
+- 
