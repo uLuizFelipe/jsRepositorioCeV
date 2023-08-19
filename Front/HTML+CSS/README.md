@@ -258,4 +258,22 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - color:  muda a cor do objeto dentro da divisão
 
 # alinhamentos em CSS
-- 
+- text-align: left, center e right;
+- text-align: justify; conectado a ambos os lados
+- text-indent: produz um distanciamento do início da linha
+
+# Identificando CSS
+- id: #elemento; representação única do elemento;
+- class: .class; representação genérica de atributos;
+- id se sobrepõe a class;
+- pseudo-classes: :elemento; utilizada dentro de algumas configurações pre estabelecidas
+
+# Esconder textos
+- utiliza de pseudo classes para esconder e mostrar elementos
+- div > p {
+    display: none;
+}
+
+- div:hover > {
+    display: block;
+}

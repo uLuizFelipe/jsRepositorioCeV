@@ -1,0 +1,54 @@
+@charset "UFT-8";
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    width: 480px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+h1 {
+    background-color: rgba(38, 177, 107, 0.395);
+    border-radius: 15px;
+}
+
+h2 {
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+h2:hover {
+    color: rgb(255, 255, 255);
+}
+
+#biscoito {
+    background-color: rgba(96, 178, 249, 0.229);
+}
+
+#cookie {
+    background-color: rgba(63, 31, 99, 0.229);
+}
+
+#bolacha {
+    background-color: rgba(224, 25, 138, 0.504);
+}
+
+#oculto {
+    background-color: rgb(133, 66, 197);
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    
+}
