@@ -6,19 +6,35 @@
 
 body {
     background-color: bisque;
+    margin: 0px;
 }
 
 header {
     margin: auto;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(120deg,#5B7553, #040403);
+    border-radius: 0px 0px 100px 100px;
+    border: 2px solid black;
+    padding-bottom: 20px;
 }
 
 header > h1#cabeça{
     font-size: 1.6em;
 }
 
-#menu {}
+nav#menu {
+
+}
+
+nav > span#menubox {
+    padding: 5px;
+    border-top: 2px solid #040403;
+    border-radius: 100px;
+    border-bottom: 2px solid #040403;
+    background-image: linear-gradient(to right, rgb(155, 101, 0), yellow, blue, rgb(138, 9, 189));
+    box-shadow: 3px 3px 5px;
+}
 
 .menu {
     text-decoration: none;
@@ -30,35 +46,37 @@ header > h1#cabeça{
     border-radius: 15px;
 }
 
-main#corpo{
+main{
     padding: 30px 0px 20px 0px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border: 1px solid black;
-    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border: 2px solid black;
+    border-radius: 16px 16px 0px 0px;
     text-align: center;
     background-image: linear-gradient(to left, #040403, #5B7553, #8EB897, #C3E8BD, #9DDBAD);
 }
 
-main#corpo > section#apresentação > img{
+main > section#apresentação > img{
     border-radius: 20px;
 }
 
-main#corpo > section#sobre{
+main > section#sobre{
     text-indent: 16px;
     text-align: justify;
+    margin: auto;
     padding: 5px;
-    background-color: white;
-    width: 350px;
+    background-image: linear-gradient(to right, white, gray);
     border-radius: 16px;
     border: 2px solid black;
 }
-main#corpo > section#sobre > h2#parafrase{
+section#sobre > h2{
     font-size: 1.2em;
 }
-main#corpo > section#sobre > article#resumo{
-    border-radius: 16px;
+section#sobre > article#resumo{
+   text-align: justify;
 
 }
 footer#pe{
+    background-color: black;
+    color: white;
 }
