@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    background-image: linear-gradient(to right, #7A306C, #8E8DBE, #A9E4EF, #81F495, #96F550);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+}
+
+a::before {
+    content: '↛';
+}
+
+a::after {
+    content: ' link';
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(58, 50, 21);
+}

@@ -28,7 +28,7 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 # Imagens
 
-- <img src="path.tipo" alt="nome">
+-     <img src="path.tipo" alt="nome">
 
 - png, imagens com transparéncia e qualidade normalmente melhor
 - jpg, compactação é maior importância no arquivo
@@ -39,7 +39,7 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 # imagens dinâmicas
 
-<picture>
+    <picture>
         <source media="(max-width: tamanho)" srcset="path.tipo" type="image/tipo">
         <source media="(max-width: tamanho)" srcset="path.tipo" type="image/tipo">
         <img src="path.tipo" alt="nome">
@@ -51,7 +51,8 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 
 # semantica
-    Para organizar o conteúdo em HTML, algumas tags podem sem utilizadas. A maioria delas não muda somente a forma do conteúdo, elas também marcam o conteúdo para buscas nos mecanismos de pesquisa
+
+- Para organizar o conteúdo em HTML, algumas tags podem sem utilizadas. A maioria delas não muda somente a forma do conteúdo, elas também marcam o conteúdo para buscas nos mecanismos de pesquisa
 - Negrito (<b></b>)
 - Destaque (<strong></strong>)
 - Itálico (<i></i>)
@@ -68,6 +69,7 @@ comentários em HTML entre <!----> e em CSS entre/**/
 - Citações em blocos longos (<blockquotes></blockquotes>) - para demonstrar o path da citação e auxiliar os mecanismos de busca, usar a propriedade cite="path"
 - Abreviações (<abbr>nome por extenso</abbr>)
 - Inversão de texto (<bdo: dir= "rtl"></bdo>)
+- Para organizar o conteúdo em HTML, algumas tags podem sem utilizadas. A maioria delas não muda somente a forma do conteúdo, elas também marcam o conteúdo para buscas nos mecanismos de pesquisa
 
 # Listas 
 - ordenadas<ol>
@@ -114,9 +116,9 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 # links e ancoras
 
--    <a href="url">ancora</a>
+    <a href="#">ancora</a>
 
-- links utilizam de ancoras e url's para entregar mobilidade dentro e entre sites
+- links utilizão de ancoras e url's para entregar mobilidade dentro e entre sites
 - caso o link envie o usuário para outra pagina no mesmo produto, recomendasse que use esse código.
 - quando o destino é externo, recomendasse que adicione os atributos:
     <a href="path" target="_blank" rel="external">ancora</a>
@@ -125,13 +127,13 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 
 # Baixar links
 
-- <a href="path" download="nome do arquivo" type="formato/tipo do arquivo"></a>
+-       <a href="path" download="nome do arquivo" type="formato/tipo do arquivo"></a>
 
 - uso para gerar o link de download
 
 # audio
 
-- <audio src="path.tipo" atributos></audio>
+-       <audio src="path.tipo" atributos></audio>
 
 - o parametro <autoplay> faz o audio tocar no momento que a pagina se inicia
 - o parametro <controls> disponibiliza um controle para a midia
@@ -174,7 +176,7 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - padding: distancia entre o conteúdo e a borda
 - border: a margem do conteúdo
 - margin: área externa à margem
-- shadow-box: sombra estilizada(quanto a sombra irá para o lado, quanto a sombra irá para baixo, quanto a sombra espalhará, opacidade da sombra)
+- shadow-box: sombra estilizada(deslocamento lateral, deslocamento vertical, spreading, opacidade)
 
 # Medidas e tamanhos em CSS
 - font-family:
@@ -263,8 +265,13 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - text-indent: produz um distanciamento do início da linha
 
 # Identificando CSS
-- id: #elemento; representação única do elemento;
-- class: .class; representação genérica de atributos;
+- #. = id; representação única do elemento;
+- .  = class; representação genérica de atributos;
+- :  = pseudo-class, configs pré-estabelecidas editáveis;
+- :: = pseudo-element, características pré-estabelecidas editáveis;
+- .> = children, referência a um elemento dentro de outro;
+
+
 - id se sobrepõe a class;
 - pseudo-classes: :elemento; utilizada dentro de algumas configurações pre estabelecidas
 
@@ -277,3 +284,81 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - div:hover > {
     display: block;
 }
+
+# Pseudo classes de um link
+- a:visited, quando o link já foi utilizado
+- a:actived, quando o link está sendo utilizado
+- text-decoration: none; retira o underline do link
+- a:hover, quando o mousse está encima de um elemento
+- text-decoration: underline; coloca underline no link
+
+# Pseudo elementos
+- a::before, orienta características antes de um elemento
+- a::after, orienta características após um elemento
+- É possivel mesclar classes e subelementos livremente (cap15, p4, 10:30)
+
+# Modelo de caixas - anatômia
+- height: altura da caixa
+- width: largura da caixa
+- parte do conteúdo/box sizing: aréa da altura e largura
+- border: linha limite do conteúdo
+- padding: espaço interno de preenchimento, normalmente nulo
+- margin: espaço externo de distanciamento, normalmente nolo
+- outline: linha imediata ao border
+
+# Modelo de caixas - box-level DIV
+- elemento ocupa a aréa completa oferecida, de modo independente.
+-       <div> utiliza toda a aréa oferecida e quebra linha
+    <ul>
+    <li> div
+    <li> h1-h6
+    <li> p
+    <li> main
+    <li> header
+    <li> nav
+    <li> article
+    <li> aside
+    <li> footer
+    <li> form
+    <li> video
+    </ul>
+
+# para centralizar elementos caixa, é possivel utilizar o margin: auto;
+
+# Modelo de caixas - inline-level SPAN
+- elemento utiliza a aréa necessária, não quebrando linha.
+-        <span> utiliza a aréa necessária e continua o conteúdo
+    <ul>
+    <li> span
+    <li> a
+    <li> code
+    <li> small
+    <li> strong
+    <li> em
+    <li> sup-sub
+    <li> label
+    <li> button
+    <li> input
+    <li> select
+    </ul>
+
+# é possivel modificar as características de um box utilizando o atributo display: inline/block/inline-block
+
+# simplificação das características dos modelos
+- shorthand para boxex
+- border: largura, style, color
+- border: 10px solid white
+- padding: topo, direita, baixo, esquerda
+- padding: 10px 10px 10px 10px; - possivel simplificar se todas as medidas forem iguais
+- padding: 10px;
+- outline: largura, style, color
+- outline: 2px dotted, white
+
+# grouping tags em HTML
+- uteis para organização semántica do corpo do site
+- header
+- main
+- section
+- nav
+- article
+- footer

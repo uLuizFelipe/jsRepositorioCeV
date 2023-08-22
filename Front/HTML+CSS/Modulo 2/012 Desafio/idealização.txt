@@ -1,0 +1,5 @@
+1 criar um site base como portifólio
+2 criar menus interativos encima
+3 titulos e sub-titulos
+4 imagens interativas
+5 fé

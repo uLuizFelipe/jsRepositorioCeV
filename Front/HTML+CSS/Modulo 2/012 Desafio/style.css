@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header > h1#cabeça{
+    font-size: 1.6em;
+}
+
+#menu {}
+
+.menu {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 10px 15px 10px 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+main#corpo{
+    padding: 30px 0px 20px 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-image: linear-gradient(to left, #040403, #5B7553, #8EB897, #C3E8BD, #9DDBAD);
+}
+
+main#corpo > section#apresentação > img{
+    border-radius: 20px;
+}
+
+main#corpo > section#sobre{
+    text-indent: 16px;
+    text-align: justify;
+    padding: 5px;
+    background-color: white;
+    width: 350px;
+    border-radius: 16px;
+    border: 2px solid black;
+}
+main#corpo > section#sobre > h2#parafrase{
+    font-size: 1.2em;
+}
+main#corpo > section#sobre > article#resumo{
+    border-radius: 16px;
+
+}
+footer#pe{
+}
