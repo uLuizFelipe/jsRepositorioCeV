@@ -4,32 +4,43 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --corDegrade1: #040403;
+    --corDegrade2: #5B7553;
+    --corDegrade3: #8EB897;
+    --corDegrade4: #C3E8BD;
+    --corDegrade5: #9DDBAD;
+    
+}
+
 body {
-    background-color: bisque;
-    margin: 0px;
+    background-color: var(--corDegrade2);
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0px;
+    min-width: 500px;
+    max-width: 700px;
 }
 
 header {
     margin: auto;
     text-align: center;
-    margin-bottom: 0px;
-    background-image: linear-gradient(120deg,#5B7553, #040403);
+    background-image: linear-gradient(-60deg, var(--corDegrade1), var(--corDegrade3));
     border-radius: 0px 0px 100px 100px;
     border: 2px solid black;
     padding-bottom: 20px;
+    min-width: 300px;
+    max-width: 700px;
+
 }
 
 header > h1#cabeça{
     font-size: 1.6em;
 }
 
-nav#menu {
-
-}
-
-nav > span#menubox {
+span {
     padding: 5px;
-    border-top: 2px solid #040403;
+    border-top: 2px solid var(--cor1);
     border-radius: 100px;
     border-bottom: 2px solid #040403;
     background-image: linear-gradient(to right, rgb(155, 101, 0), yellow, blue, rgb(138, 9, 189));
@@ -38,41 +49,55 @@ nav > span#menubox {
 
 .menu {
     text-decoration: none;
+    font-weight: bold;
     background-color: black;
     color: white;
     padding: 5px;
     margin: 10px 15px 10px 15px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
+    transition-duration: 1.8s;
+}
+
+.menu:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: underline;
 }
 
 main{
+    min-width: 320;
+    max-width: 500;
     padding: 30px 0px 20px 0px;
     margin-top: 10px;
-    margin-bottom: 0px;
     border: 2px solid black;
     border-radius: 16px 16px 0px 0px;
     text-align: center;
-    background-image: linear-gradient(to left, #040403, #5B7553, #8EB897, #C3E8BD, #9DDBAD);
+    background-image: linear-gradient(-80deg, var(--corDegrade1), var(--corDegrade2), var(--corDegrade3), var(--corDegrade4), var(--corDegrade5));
 }
 
 main > section#apresentação > img{
     border-radius: 20px;
 }
 
-main > section#sobre{
+main > section.texto{
+    min-width: 300px;
+    max-width: 500px;
     text-indent: 16px;
     text-align: justify;
     margin: auto;
+    margin-bottom: 10px;
     padding: 5px;
-    background-image: linear-gradient(to right, white, gray);
+    background-image: linear-gradient(to right, rgb(215, 215, 215), rgb(95, 95, 95));
     border-radius: 16px;
     border: 2px solid black;
 }
-section#sobre > h2{
-    font-size: 1.2em;
+
+section > h2{
+    font-size: 1.4em;
 }
-section#sobre > article#resumo{
+section > article{
    text-align: justify;
 
 }

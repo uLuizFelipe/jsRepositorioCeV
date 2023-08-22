@@ -362,3 +362,20 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - nav
 - article
 - footer
+
+# variaveis em CSS
+- criadas na aréa :root{
+    --cor0: #a1a1a1
+    --cor1: #b2b2b2
+    --cor3: #c3c3c3
+    --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte_destaque: 'Bebas Neue', cursive;
+}
+- body {
+    background-color: var(--cor0)
+    font-family: var(--fonte_padrao)
+}
+- util para adaptar a paleta de cores de um site de uma vez
+
+# responsividade
+- 
