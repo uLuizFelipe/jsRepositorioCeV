@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(cabana_lago_montanha.jpg);
+    background-size: 100% 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
+}
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.750);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+h1 {
+    background-color: blue;
+    margin-bottom: 35px;
+}
+a {
+    padding: 8px;
+    font-size: 1.2em;
+    margin: 30px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+}
+a:hover {
+    font-size: 1.2em;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-color: white;
+}
