@@ -22,7 +22,7 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 # Emojis e simbolos
 - formatação: &#xNlNNN;
-- Emojis são uma combunação do prefixo &#x + seu código hexadecimal + ;
+- Emojis são uma combinação do prefixo &#x + seu código hexadecimal + ;
 
 - para uso de emojis e simbolos, pesquisar seus códigos na web
 
@@ -378,5 +378,8 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 }
 - util para adaptar a paleta de cores de um site de uma vez
 
-# responsividade
-- 
+# Imagens como plano de fundo
+- background-image: url("path.formato"), define a imagem como planode fundo levando em conta seu tamanho e multiplicando-a para preenchar o espaço se necessário.
+- background-position: posição, define a posição da imagem no enquadramento.
+- background-repeat: escolha, define a repetição do fundo.
+- background-size: largura altura, define o tamanho da imagen no fundo.
