@@ -36,6 +36,7 @@ comentários em HTML entre <!----> e em CSS entre/**/
 # Favicon
 -  São as imagens de shortcut da pagina, ficam no canto superior da pagina, são inseridas com o marcador <link rel="shortcut icon" href="path da imagem">
 
+# não_coloque_nomes_com_espaço,_será_um_inferno_resolver_para_imgs!
 
 # imagens dinâmicas
 
