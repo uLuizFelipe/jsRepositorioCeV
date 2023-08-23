@@ -383,3 +383,6 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - background-position: posição, define a posição da imagem no enquadramento.
 - background-repeat: escolha, define a repetição do fundo.
 - background-size: largura altura, define o tamanho da imagen no fundo.
+- recomendado dar 100vw e 100vh para widht e heigth do body e 100% 100% do background-size
+- também interessante usar o contain(mostra a imagem completa e cria barras laterais) e o cover(mostra a imagem cortada até acertar o tamanho correto)
+

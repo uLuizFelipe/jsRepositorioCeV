@@ -1,0 +1,52 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(cabana_lago_montanha.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+header {
+    text-align: bottom;
+}
+main{
+    max-width: 1050px;
+    margin: auto;
+}
+.container {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 25%;
+    background-image: url(cabana_lago_montanha.jpg);
+    background-size: 300% 300%;
+    display: inline-block;
+}
+#top {
+    background-position: top;
+}
+#top-right {
+    background-position: top right;
+}
+#right {
+    background-position: right;
+}
+#bottom-right {
+    background-position: bottom right;
+}
+#bottom{
+    background-position: bottom;
+}
+#bottom-left {
+    background-position: bottom left;
+}
+#left {
+    background-position: left;
+}
+#top-left {
+    background-position: top left;
+}
