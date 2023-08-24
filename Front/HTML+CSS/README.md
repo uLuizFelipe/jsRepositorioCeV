@@ -384,5 +384,28 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - background-repeat: escolha, define a repetição do fundo.
 - background-size: largura altura, define o tamanho da imagen no fundo.
 - recomendado dar 100vw e 100vh para widht e heigth do body e 100% 100% do background-size
-- também interessante usar o contain(mostra a imagem completa e cria barras laterais) e o cover(mostra a imagem cortada até acertar o tamanho correto)
+- também interessante usar o CONTAIN(mostra a imagem completa e cria barras laterais) e o COVER(mostra a imagem cortada até acertar o tamanho correto)
+ 
+# shorthand background
+- background: color, image, position, repeat, size, attachment
+- background: black url('path.tipo') center center repeat cover fixed
 
+# Posicionamento relativo por containers
+- identificar o container como absoluto (position: absolute;)
+- configurar o elemento como relativo (position: relative;)
+- configurar as características left e top
+- configurar a translação desejada
+
+#container {
+            height: 95vh;
+            padding: 10px; 
+            position: relative;
+        }
+#conteudo {            
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+}
+
+# 
