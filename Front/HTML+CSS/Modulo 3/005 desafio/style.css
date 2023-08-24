@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {/*Fonte geral*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: rgb(240, 248, 255);
+}
+
+body {
+    background-color: var(--cor1);
+    text-align: center;
+}
+header {
+    /*Estilização de camadas básica*/
+    background-color: rgb(0, 0, 160);
+    color: white;
+    border-radius: 0px 0px 24px 24px;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+}
+h1 {
+    margin-top: -8px;
+}
+a {
+    text-decoration: none;
+}
+header a {
+    /*conferir se fica centralizado*/
+    width: 300px;
+    height: 50px;
+
+    border: 2px solid black;
+    border-radius: 24px;
+
+    background-color: black;
+    color: white;
+}
+header a:hover {
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+main {
+    background-color: rgb(240, 248, 255);
+    margin: auto;
+    max-width: 800px;
+}
+section {
+    /*possivelmente dará erro de tamanho, corrigir dps*/
+    height: 800px;
+    width:  800px;
+}
+.image {
+    /*fixada, responsiva*/
+
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+}
+.color {
+    /*cor facil de ler*/
+
+    background-color: blanchedalmond;
+    text-align: right;
+}
+.verso {
+    /*limite de tamanho,translúcido, esquerda formatada*/
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+#image_I {
+    /*path e foco*/
+
+    background-image: url(imgs/cadeira.jpg);
+    background-position: center center;
+}
+#image_II {
+    /*tamanho, path, fixada em local especifico, responsiva*/
+
+    background-image: url(imgs/paisagem_morta.jpg);
+    background-position: center right;
+}
+footer {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,32 @@
+1 - responsividade
+2 - imagens de fundo fixas e rotativas
+3 - manipulação de planos de fundo, article
+4 - letra responsiva
+
+tema: um trecho dos luziadas
+
+header {
+    titulo
+    link do detentor
+}
+main {
+    section_1 {
+        background-image-1 - fixo em área expecifica, responsivo
+        article id=verso_I - translúcido, esquerda, black, limite de tamanho
+        }
+    section_2 {
+        background-color-1 - facil de ler
+        article id=verso_II - opaco, direito, white, limite de tamanho
+    }
+    section_3 {
+        background-image-2 - fixo em área expecifica, responsivo
+        article id=verso_III - transparente, esquerda, black, limitede tamanho
+    }
+    section_4 {
+        background-color-2 - facil de ler
+        article id=verso_IV - opaco, direita, white, limite de tamanho
+    }
+}
+footer {
+    info: contatos
+}
