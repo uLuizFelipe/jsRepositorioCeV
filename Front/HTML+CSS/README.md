@@ -408,4 +408,14 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
             transform: translate(-50%,-50%);
 }
 
-# 
+# Tabela
+- hierarquia
+        < table>
+            < tr> - header
+                < td>el_1< /td>
+                < td>el_2< /td>
+                < td>el_3< /td>
+            < /tr>
+        < /table>
+
+- possivel gerar alinhamento nos elementos da td com text-align(left, center, right) e vertical-align?(top, middle, bottom)

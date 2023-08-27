@@ -16,10 +16,12 @@ body {
 }
 header {
     /*Estilização de camadas básica*/
+
+    width: 90vw;
+    height: 10vh;
     background-color: rgb(0, 0, 160);
     color: white;
     border-radius: 0px 0px 24px 24px;
-    text-align: center;
     box-shadow: 2px 2px 10px black;
     margin-bottom: 2px;
 }
@@ -31,8 +33,6 @@ a {
 }
 header a {
     /*conferir se fica centralizado*/
-    width: 300px;
-    height: 50px;
 
     border: 2px solid black;
     border-radius: 24px;
@@ -47,7 +47,7 @@ header a:hover {
 }
 section {
     /*possivelmente dará erro de tamanho, corrigir dps*/
-    width:  90vw;
+    width:  84vw;
     height: 100vh;
     position: relative;
 }
@@ -67,11 +67,12 @@ section {
 .verso {
     /*limite de tamanho,translúcido, esquerda formatada*/
 
-    font-size: 40px;
+    font-size: 3vw;
     color: black;
 }
 p {
     background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
 }
 p.img {
     position: absolute;
