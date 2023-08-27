@@ -411,7 +411,7 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 # Tabela
 - hierarquia
         < table>
-            < tr> - header
+            < tr> < th> header < /th>
                 < td>el_1< /td>
                 < td>el_2< /td>
                 < td>el_3< /td>
@@ -419,3 +419,10 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
         < /table>
 
 - possivel gerar alinhamento nos elementos da td com text-align(left, center, right) e vertical-align?(top, middle, bottom)
+
+- para tabelas grandes, utilizar thead, tbody e tfoot;
+
+# indicação de elementos filhos
+
+- elemento pai > elemento filho:nth-child(condição) {}
+- body > .class:nth0-child(odd)
