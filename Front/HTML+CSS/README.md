@@ -441,3 +441,15 @@ colgroup
 
 - elemento pai > elemento filho:nth-child(condição) {}
 - body > .class:nth0-child(odd)
+
+# Iframe
+- < iframe src="url" frameborder="0">< /iframe>
+- inline frames funcionam como pequenas janelas no ambiente
+- sites podem bloquear que os seus conteúdos sejam utilizados em iframes
+
+# frameborder
+-parâmetro do iframe, 0 retira a borda e qqr outro valor a cria, para personaliza-la mais, gerar nas CSS
+
+# scrolling
+- parâmetro que gera ou proibe uma barra de rolagem
+- auto, no, yes
