@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrativo escolar de semestre</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        th, td {
+            width: 80px;
+            height: 20px;
+            border: 2px solid black;
+        }
+        .cab {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead><tr><th colspan="5">Boletim semestral de Luiz Felipe Pires</th></tr></thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" class="cab" scope="col">Área</th>
+                <th rowspan="2" class="cab" scope="col">Disciplinas</th>
+                <th colspan="2" class="cab" scope="colgroup">Notas</th>
+                <th rowspan="2" class="cab" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th class="cab" scope="col">Nota 1</th>
+                <th class="cab" scope="col">Nota 2</th>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup">EXATAS</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="cab">Média de exatas</th>
+                <td class="cab">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2"  scope="rowgroup">HUMANAS</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="cab">Média de humanas</th>
+                <td class="cab">0.0</td>
+            </tr>
+        </tbody>
+        <tfoot><tr><th colspan="5">Feito por Luiz</th></tr></tfoot>
+    </table>
+</body>
+</html>

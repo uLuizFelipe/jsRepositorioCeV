@@ -430,6 +430,7 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 # escopo de uma tabela
 
 - define onde estão os dados desse head
+- row, col, rowgroup, colgroup
 
 # indicação de elementos filhos
 
