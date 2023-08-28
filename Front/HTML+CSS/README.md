@@ -422,6 +422,15 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 
 - para tabelas grandes, utilizar thead, tbody e tfoot;
 
+# mesclando células de uma tabela
+
+- colspan: mescla colunas numa mesma linha
+- rowspan: mescla linhas numa mesma coluna
+
+# escopo de uma tabela
+
+- define onde estão os dados desse head
+
 # indicação de elementos filhos
 
 - elemento pai > elemento filho:nth-child(condição) {}

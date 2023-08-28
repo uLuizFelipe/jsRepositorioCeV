@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de filmes favoritos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            position: absolute;
+            left: 50%;
+            top: 18%;
+            transform: translate(-50%,-50%);
+        }
+        caption {
+            font-size: large;
+            font-weight: bold;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        th {
+            font-size: medium;
+        }
+        tfoot  tr td{
+            font-weight: 100;
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th colspan="2">Nome</th>
+                <th colspan="2">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td class="nomes">Ana</td>
+                <td class="filme">Alien</td>
+                <td class="filme">Batman</td>
+                <td class="filme">Captive</td>
+            </tr>
+            <tr>
+                <td class="nomes">Beatriz</td>
+                <td class="filme">Django</td>
+                <td class="filme">Etér</td>
+                <td class="filme">Foot dance</td>
+            </tr>
+            <tr>
+                <td class="nomes">Carla</td>
+                <td class="filme">Garfield</td>
+                <td class="filme">Hipno</td>
+                <td class="filme">Interestelar</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td class="nomes">Arthur</td>
+                <td class="filme">Just</td>
+                <td class="filme">Kids</td>
+                <td class="filme">Laughing</td>
+            </tr>
+            <tr>
+                <td class="nomes">Bruno</td>
+                <td class="filme">Manny</td>
+                <td class="filme">Nauta</td>
+                <td class="filme">Opium</td>
+            </tr>
+            <tr>
+                <td class="nomes">Carlo</td>
+                <td class="filme">Pascal</td>
+                <td class="filme">Quirium</td>
+                <td class="filme">Radium</td>
+            </tr>
+        </tbody>
+        <tfoot><tr><td colspan="5">Gráfico desenvolvido por luiz</td></tr></tfoot>
+    </table>
+</body>
+</html>
