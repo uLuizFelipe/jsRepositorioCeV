@@ -432,6 +432,11 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - define onde estão os dados desse head
 - row, col, rowgroup, colgroup
 
+# grupos de colunas
+-colgroups define uma coluna como tendo certas características
+colgroup
+    col class="nome"
+
 # indicação de elementos filhos
 
 - elemento pai > elemento filho:nth-child(condição) {}
