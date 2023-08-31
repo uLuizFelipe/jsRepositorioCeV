@@ -379,7 +379,7 @@ tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - util para adaptar a paleta de cores de um site de uma vez
 
 # Imagens como plano de fundo
-- background-image: url("path.formato"), define a imagem como planode fundo levando em conta seu tamanho e multiplicando-a para preenchar o espaço se necessário.
+- background-image: url("path.formato"), define a imagem como plano de fundo levando em conta seu tamanho e multiplicando-a para preenchar o espaço se necessário.
 - background-position: posição, define a posição da imagem no enquadramento.
 - background-repeat: escolha, define a repetição do fundo.
 - background-size: largura altura, define o tamanho da imagen no fundo.

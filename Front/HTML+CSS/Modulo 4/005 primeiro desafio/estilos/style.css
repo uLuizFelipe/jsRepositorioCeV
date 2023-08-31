@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: black url(../imgs/cabana_lago_montanha.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+#telefone {
+    height: 648px;
+    width: 350px;
+
+    border-radius: 24px;
+    border: 3px solid white;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: greenyellow url(../imgs/!\ 𝑴𝒐𝒓𝒆𝒏𝒐\ 🖤\ 🇧🇷.jpeg) no-repeat;
+    background-size: contain;
+}
+
+#tela {
+    position: relative;
+    left: 82.5px;
+    top: 152px;
+
+    width: 188px;
+    height: 184px;
+
+}
