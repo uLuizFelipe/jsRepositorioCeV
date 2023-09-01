@@ -466,7 +466,16 @@ colgroup
 
 # media types
 - define em qual fonte os estilos vão ser aplicados
+- print, screen, all.
 
 # media features
 - caracteristicas do dispositivo
-- deve ser 
+- deve definido sempre dentro de parenteses e precedidos por "and"
+- tamanho, orientação, etc.
+
+# devide breakpoints
+- estipula o tamanho de quebra do tamanho dos dispositivos
+
+# menu responsivo
+- feito por uma fusão de HTML, CSS e Javascript
+- atraves de uma função onclick() é possivel editar os estilos vigentes
