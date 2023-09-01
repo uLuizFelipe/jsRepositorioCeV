@@ -462,3 +462,11 @@ colgroup
 
 # medias queries
 - ferramenta capaz de expecificar tamanhos que farão certos estilos serem ativados
+- os estilos são sobrepostos com a prioridade sendo do ultimo adicionado
+
+# media types
+- define em qual fonte os estilos vão ser aplicados
+
+# media features
+- caracteristicas do dispositivo
+- deve ser 
