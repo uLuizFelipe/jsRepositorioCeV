@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais forms</title>
+    <style>
+        form legend{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="masc" value="masculino" checked><label for="masc">Masculino</label>
+            <input type="radio" name="sex" id="fem" value="feminino"><label for="fem">Feminino</label>
+            <!--para a radio estar ligada, ela deve ter o mesmo nome, caso contrário, será impossivel desmarcar as opções-->
+            <!--necessário colocar value no radio para dar valor aos inputs-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <input type="checkbox" id="basquete"> <label for="basquete">Basquete</label><br>
+            <input type="checkbox" id="futebol"><label for="futebol">Futebol</label><br>
+            <input type="checkbox" id="tenis"><label for="tenis">Tênis</label><br>
+            <input type="checkbox" id="natacao"><label for="natacao">Natação</label>
+        </fieldset>
+    </form>
+</body>
+</html>
