@@ -453,3 +453,9 @@ colgroup
 # scrolling
 - parâmetro que gera ou proibe uma barra de rolagem
 - auto, no, yes
+
+# ::-webkit-scrollbar 
+- define os aspectos da barra de rolagem
+
+# formulários
+- 

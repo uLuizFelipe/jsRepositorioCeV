@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário não vazio</title>
+</head>
+<body>
+    <form action="enviar.js" method="post">
+        <p>
+            <label for="usuario">Usuário: </label>
+            <input type="text" id="usuario" required minlength="5" maxlength="30" size="8">
+        </p>
+        <p>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" required minlength="3" maxlength="13" size="10">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
