@@ -459,3 +459,6 @@ colgroup
 
 # formulários
 - 
+
+# medias queries
+- ferramenta capaz de expecificar tamanhos que farão certos estilos serem ativados
