@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*others devices*/
+
+@media screen and (min-width: 750px) {
+    
+    #burguer {
+        display: none;
+    }
+    
+    #itens ul {
+        text-align: center;
+    }
+    
+    #itens li {
+        display: inline-block;
+    }
+}
