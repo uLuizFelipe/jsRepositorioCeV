@@ -35,7 +35,7 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-
+    
     transition: width .75s, height .75s; /*dita a velocidade de transição*/
     transition-timing-function: ease; /*dita o modo de transição*/
 }
@@ -72,8 +72,6 @@ form .campo{
 }
 
 form span {
-    transform: translatey(10%);
-
     font-size: 2em;
 
     padding: 5px;
@@ -81,6 +79,8 @@ form span {
 
     color: white;
     background-color: #2A1F2D;
+    
+    transform: translatey(10%);
 }
 
 form .campo label {
@@ -91,13 +91,17 @@ form .campo input {
     width: 80%;
     height: 100%;
 
-    transform: translatey(-8%);
-
     border-radius: 5px;
 
     font-size: 1em;
 
     background-image: linear-gradient(to bottom, #5B6C5D, #59C9A5, #5B6C5D);
+    
+    transform: translatey(-8%);
+}
+
+form .campo input:focus-within {
+    background-image: linear-gradient(to bottom, white 40%, black );
 }
 
 form .button {
