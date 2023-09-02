@@ -11,35 +11,35 @@
     #imagem {
         float: left;
 
-        width: 40%;
+        width: 30%;
         height: 100%;
     }
 
     #form {
         float: right;
 
-        width: 60%;
+        width: 70%;
         height: 100%;
     }
 }
 
 @media screen and (min-width: 908px) {
     #login {
-        width: 908px;
+        width: 808px;
         height: 50vh;
     }
 
     #imagem {
         float: right;
 
-        width: 40%;
+        width: 50%;
         height: 100%;
     }
 
     #form {
         float: left;
 
-        width: 60%;
+        width: 50%;
         height: 100%;
     }
 }

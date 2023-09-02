@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaQuery.css">
 </head>
@@ -12,16 +13,26 @@
         <section id="login">
             <div id="imagem"></div>
             <div id="form">
-                <form>
-                    <h1>login</h1>
-                    <label for="mail">Email:</label>
-                    <input type="email" name="email" id="mail">
-                    <br>
-                    <label for="pass">Senha:</label>
-                    <input type="password" name="pass" id="pass">
+                <h1>login</h1>    
+                    <form>
+                        <div class="campo">
+                            <span class="material-icons">
+                                email
+                                </span>
+                            <input type="email" name="email" id="mail" placeholder="seu email" autocomplete="on" required maxlength="30" size="15">
+                            <label for="mail">Email:</label>
+                        </div>
+                        <div class="campo">    
+                            <span class="material-icons">
+                                key
+                                </span>
+                            <input type="password" name="pass" id="pass" placeholder="sua senha" required maxlength="14" size="15">
+                            <label for="pass">Senha:</label>
+                        </div>
 
-                    <input type="reset" value="limpar">
-                </form>
+                        <input type="reset" value="limpar">
+                        <input type="button" value="Esqueci a senha">
+                    </form>
             </div>
         </section>
     </main>
