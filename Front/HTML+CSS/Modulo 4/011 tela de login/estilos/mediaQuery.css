@@ -21,6 +21,14 @@
         width: 70%;
         height: 100%;
     }
+
+    form .campo{
+        padding-left: 11px;
+    }
+
+    form .campo input {
+        width: 86%;
+    }
 }
 
 @media screen and (min-width: 908px) {
@@ -41,5 +49,13 @@
 
         width: 50%;
         height: 100%;
+    }
+
+    form .campo{
+        padding-left: 11px;
+    }
+
+    form .campo input {
+        width: 86%;
     }
 }
