@@ -22,7 +22,7 @@ main {
 }
 
 #login {
-    background-color: white;
+    background-color: #2A1F2D;
 
     width: 250px;
     height: 500px;
@@ -51,7 +51,48 @@ main {
     display: block;
 }
 
-#form h1{
+#formulario h1{
+    color: white;
+
     text-align: center;
 }
 
+form .campo{
+    width: 90%;
+    height: 40px;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+
+    color: #2A1F2D;
+    background-color: white;
+}
+
+form .campo label {
+    display: none;
+}
+
+form .button {
+    
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    
+    border-radius: 5px;
+
+    font-size: 1em;
+
+    display: block;
+    background-image: linear-gradient(to bottom, #5B6C5D, #59C9A5, #5B6C5D);
+}
+
+form .button:hover {
+    background-image: linear-gradient(to top, black, gray, white 90%);
+    color: white;
+    cursor: pointer;
+}
