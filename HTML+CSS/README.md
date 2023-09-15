@@ -122,8 +122,10 @@ comentários em HTML entre <!----> e em CSS entre/**/
 - links utilizão de ancoras e url's para entregar mobilidade dentro e entre sites
 - caso o link envie o usuário para outra pagina no mesmo produto, recomendasse que use esse código.
 - quando o destino é externo, recomendasse que adicione os atributos:
-    <a href="path" target="_blank" rel="external">ancora</a>
-tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
+
+        < a href="path" target="_blank" rel="external">ancora</ a>
+
+- tais atributos criam uma nova janela e mantêm a anterior em seu ultimo estado
 - Para acessar links internos em pastas anteriores, utilize ../ para retornar uma pasta
 
 # Baixar links
