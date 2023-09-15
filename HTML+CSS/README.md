@@ -145,11 +145,11 @@ comentários em HTML entre <!----> e em CSS entre/**/
 - <preload="">, escolhe se carregará automaticamente ou só quando derem play
 - <loop>, recomeça quando o arquivo acaba de rodar
 
-<audio preload="auto" controls loop>
-    <source src="audio.mp3" type="audio/mpeg">
-    <source src="audio.mp3" type="audio/mpeg">
-    <source src="audio.mp3" type="audio/mpeg">
-</audio>
+        <audio preload="auto" controls loop>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.mp3" type="audio/mpeg"> 
+        </audio>
 
 # videos
 - para uam fonte de audio
@@ -158,17 +158,17 @@ comentários em HTML entre <!----> e em CSS entre/**/
 
 - para disponibilizar diversas fontes de vide
 
-   <video controls width="500" poster="capa de video">
-    <source src="path" type="arquivo/tipo">
-    <source src="path" type="arquivo/tipo">
-    <source src="path" type="arquivo/tipo">
-    <source src="path" type="arquivo/tipo">
-    <p>não possui compatibilidade</p>
-   </video>
+        <video controls width="500" poster="capa de video">
+        <source src="path" type="arquivo/tipo">
+        <source src="path" type="arquivo/tipo">
+        <source src="path" type="arquivo/tipo">
+        <source src="path" type="arquivo/tipo">
+        <p>não possui compatibilidade</p>
+        </video>
 
 - para links externos
 
-    <iframe width="560" height="315" src="url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # modulo 2
 
